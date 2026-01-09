@@ -19,11 +19,11 @@ const router = createRouter({
   component: MenuCreate
 },
 {
-  path: '/menu/edit',
+  path: '/menu/edit/:menuId',  // ต้องระบุ :menuId LAB7
   component: MenuEdit
 },
 {
-  path: '/menu',
+  path: '/menu/:menuId',
   component: MenuShow
 }
 

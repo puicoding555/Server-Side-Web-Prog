@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <h1>Edit Menu</h1>
     <p>Menu ID: {{ menuId }}</p>
   </div>
@@ -13,7 +13,17 @@ export default {
     }
   },
   created () {
-    this.menuId = this.$route.params.menuId
+    this.menuId = this.$route.params.menuId // ดึงค่า menuId จาก URL LAB
   }
 }
 </script>
+
+<style scoped>
+    .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;   
+}
+</style>

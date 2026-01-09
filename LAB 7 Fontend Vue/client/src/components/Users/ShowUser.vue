@@ -13,11 +13,11 @@ export default {
     }
   },
   created () {
+    console.log("Crerte userId",this.$route.params)
     // ดึงค่า userId จาก URL
     this.userId = this.$route.params.userId
   }
 }
 </script>
-
 <style scoped>
 </style>
